@@ -1,14 +1,8 @@
-This is a PYTHON/MySQL User Registration/Login system which employs:
+This is a PYTHON script using a recursive function to scrape content starting at the root index file of a web site and recursively follow all appropriate links all the way down the line collecting content, using Beautiful Soup at a basic level here, to extract certain tag element values and insert the results into MongoDB.
 
-MySQL
-FLASK-SQLAlchemy
+Python
+MongoDB
+BeautifulSoup
+Hosted on Heroku
 
-Hosted on HEROKU - please note that my Username, Password and DB Name have been replaced with XXXXXXXXX's and you will have to provide your own in order to implement the solution.
-
-Naturally, the connection and hosting parameters can be modified to suit.
-
-The key element here is implementing the Flask-SQLAlchemy package.
-
-The system can easily be extended to build out a more functional menu system with authorized access and further security etc.
-
-The Procfile is required by HEROKU to direct the server the to start of the app
+Please ensure you have permission from the site owner before scraping any content.

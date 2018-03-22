@@ -17,12 +17,12 @@ def text_from_html(body):
     visible_texts = filter(tag_visible, texts)
     return u" ".join(t.strip() for t in visible_texts)
 
-html = urllib.request.urlopen('http://www.nytimes.com').read()
+html = urllib.request.urlopen('http://www.awebsite.com').read()
 print(text_from_html(html))
 
 
 
-html = urllib.request.urlopen('http://www.nytimes.com').read()
+html = urllib.request.urlopen('http://www.awebsite.com').read()
 bs = BeautifulSoup(html, "html.parser")
 possible_links = bs.select('a[href^="http"]')
 
